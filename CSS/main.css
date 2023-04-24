@@ -50,7 +50,7 @@ header .navbar .main-menu li a:hover {
   width: 100px;
   background-color: rgb(255, 227, 246);
   position: absolute;
-  top: 30px;
+  top: 55px;
   align-items: center;
   padding: 0 10px 10px 10px;
   border-radius: 10px;
@@ -88,7 +88,7 @@ header .navbar .main-menu li:hover .sub-menu {
 .swiper {
   max-width: 100%;
   height: 500px;
-  background-color: rgb(198, 198, 247);
+  /* background-color: rgb(198, 198, 247); */
   object-fit: cover;
 } 
 .swiper img {
@@ -96,21 +96,27 @@ header .navbar .main-menu li:hover .sub-menu {
   max-width: 100%;
   height: 500px;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: black;
+  z-index: 5;
+}
 
 
 .box {
   width: 100%;
   height: 600px;
   /* background-color: moccasin; */
+  position: relative;
   display: flex;
   justify-content: center;
 }
 h2 {
 width: 1200px;
 height: 50px;
-text-align: center;
 margin-top: 30px;
 font-size: 30px;
+text-align: center;
 }
 .box .inner {
   width: 1200px;
@@ -132,7 +138,15 @@ font-size: 30px;
   padding: 10px;
   border-radius: 10px;
 }
+.box .inner ul .title {
+  width: 100px;
+  height: 25px;
+  background-color: aqua;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 25px;
+}
 .box .inner ul li {
   margin-top: 20px;
-
+  line-height: 1.6;
 }
