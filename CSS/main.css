@@ -16,7 +16,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-img {
+header img {
   display: block;
   margin-left: 40px;
 }
@@ -83,6 +83,7 @@ header .navbar .main-menu li:hover .sub-menu {
   border-radius: 20px;
   border: solid .5px rgb(192, 192, 192);
   background-color: rgb(255, 227, 246);
+  cursor: pointer;
 }
 /* 섹션태그 */
 .swiper {
@@ -90,6 +91,7 @@ header .navbar .main-menu li:hover .sub-menu {
   height: 500px;
   /* background-color: rgb(198, 198, 247); */
   object-fit: cover;
+  cursor: pointer;
 } 
 .swiper img {
   object-fit: cover;
@@ -118,10 +120,10 @@ margin-top: 30px;
 font-size: 30px;
 text-align: center;
 }
-.box .inner {
+.inner {
   width: 1200px;
   height: 100%;
-  /* background-color: rgb(190, 190, 190); */
+/* background-color: aqua; */
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -129,7 +131,7 @@ text-align: center;
   align-items: center;
 }
 .box .inner ul {
-  background-color: rgb(252, 224, 229);
+  background-color:  rgb(253, 237, 244);
   margin: 10px 20px;
   min-width: 300px;
   max-width: 300px;
@@ -137,16 +139,46 @@ text-align: center;
   flex-wrap: wrap;
   padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
 }
+.box .inner ul:hover {
+  background-color: rgb(208, 250, 246);
+}
+.box .inner ul:hover .title {
+  background-color:  rgb(253, 237, 244);
+
+  
+}
+
 .box .inner ul .title {
   width: 100px;
   height: 25px;
-  background-color: aqua;
+  background-color: rgb(208, 250, 246);
   border-radius: 5px;
   text-align: center;
   line-height: 25px;
+  transition: .5s;
+
 }
 .box .inner ul li {
   margin-top: 20px;
   line-height: 1.6;
+}
+.major {
+  width: 100%;
+  height: 300px;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.major div > img {
+  border-radius: 50%;
+  margin: 10px 30px;
+  cursor: pointer;
+  transition: .5s;
+}
+.major div > img:hover {
+  border: solid 5px rgb(247, 247, 187);
 }
