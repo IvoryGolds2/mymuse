@@ -48,7 +48,7 @@ header .navbar .main-menu li a:hover {
 }
 .sub-menu {
   width: 100px;
-  background-color: rgb(255, 227, 246);
+  background-color:  rgb(253, 237, 244);
   position: absolute;
   top: 55px;
   align-items: center;
@@ -68,11 +68,11 @@ header .navbar .main-menu li:hover .sub-menu {
 .sub-menu > li:hover {
   color: hotpink;
 }
-.button {
+header .button {
   width: 300px;
   margin-right: 30px;
 }
-.button .btn:hover {
+header .button .btn:hover {
   background-color: rgb(253, 219, 242);
   transition: .5s;
 }
@@ -123,7 +123,7 @@ text-align: center;
 .inner {
   width: 1200px;
   height: 100%;
-/* background-color: aqua; */
+  /* background-color: pink; */
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -142,6 +142,7 @@ text-align: center;
   cursor: pointer;
   transition: .5s;
 }
+
 .box .inner ul:hover {
   background-color: rgb(208, 250, 246);
 }
@@ -180,5 +181,42 @@ text-align: center;
   transition: .5s;
 }
 .major div > img:hover {
-  border: solid 5px rgb(247, 247, 187);
+  opacity: .7;
+}
+/* HOT MUSE */
+.hotmuse {
+  width: 100%;
+  height: 500px;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+}
+.hotmuse .inner {
+  width: 1200px;
+  height: 100%;
+  /* background-color: #b6b3b3; */
+  display: flex;
+  justify-content: center;
+}
+.hotmuse .inner .artist {
+  width: 220px;
+  height: 400px;
+  box-sizing: border-box;
+  object-fit: cover;
+  margin: 0 20px;
+  align-items: center;
+  text-align: center;
+  font-weight: 800;
+}
+.hotmuse .inner .artist img {
+  width: 220px;
+  height: 300px;
+  margin: 0 0 10px 0;
+  /* border: #5b5b5b solid 5px; */
+  cursor: pointer;
+  transition: .4s;
+}
+.hotmuse .inner .artist img:hover {
+  border-radius: 30%;
+  opacity: .8;
 }
