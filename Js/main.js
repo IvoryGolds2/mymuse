@@ -81,3 +81,54 @@ const swiper = new Swiper('.swiper', {
     speed: 50,
     waitUntilVisible: true,
   }).go();
+
+const list1El = document.querySelector('.list1');
+const list2El = document.querySelector('.list2');
+const list3El = document.querySelector('.list3');
+const list4El = document.querySelector('.list4');
+const list5El = document.querySelector('.list5');
+
+const music1El = document.querySelector('.music1');
+const music2El = document.querySelector('.music2');
+const music3El = document.querySelector('.music3');
+const music4El = document.querySelector('.music4');
+const music5El = document.querySelector('.music5');
+
+list1El.addEventListener('mouseover', function(){
+  music1El.style.display = "block";
+  music2El.style.display = "none"
+  music3El.style.display = "none"
+  music4El.style.display = "none"
+  music5El.style.display = "none"
+});
+list2El.addEventListener('mouseover', function(){
+  music2El.style.display = "block";
+  music1El.style.display = "none"
+  music3El.style.display = "none"
+  music4El.style.display = "none"
+  music5El.style.display = "none"
+});
+list3El.addEventListener('mouseover', function(){
+  music3El.style.display = "block";
+  music1El.style.display = "none"
+  music2El.style.display = "none"
+  music4El.style.display = "none"
+  music5El.style.display = "none"
+});
+list4El.addEventListener('mouseover', function(){
+  music4El.style.display = "block";
+  music1El.style.display = "none"
+  music2El.style.display = "none"
+  music3El.style.display = "none"
+  music5El.style.display = "none"
+});
+list5El.addEventListener('mouseover', function(){
+  music5El.style.display = "block";
+  music1El.style.display = "none"
+  music2El.style.display = "none"
+  music3El.style.display = "none"
+  music4El.style.display = "none"
+});
+
+
+
