@@ -96,39 +96,59 @@ const music5El = document.querySelector('.music5');
 
 list1El.addEventListener('mouseover', function(){
   music1El.style.display = "block";
-  music2El.style.display = "none"
-  music3El.style.display = "none"
-  music4El.style.display = "none"
-  music5El.style.display = "none"
+  music2El.style.display = "none";
+  music3El.style.display = "none";
+  music4El.style.display = "none";
+  music5El.style.display = "none";
 });
 list2El.addEventListener('mouseover', function(){
   music2El.style.display = "block";
-  music1El.style.display = "none"
-  music3El.style.display = "none"
-  music4El.style.display = "none"
-  music5El.style.display = "none"
+  music1El.style.display = "none";
+  music3El.style.display = "none";
+  music4El.style.display = "none";
+  music5El.style.display = "none";
 });
 list3El.addEventListener('mouseover', function(){
   music3El.style.display = "block";
-  music1El.style.display = "none"
-  music2El.style.display = "none"
-  music4El.style.display = "none"
-  music5El.style.display = "none"
+  music1El.style.display = "none";
+  music2El.style.display = "none";
+  music4El.style.display = "none";
+  music5El.style.display = "none";
 });
 list4El.addEventListener('mouseover', function(){
   music4El.style.display = "block";
-  music1El.style.display = "none"
-  music2El.style.display = "none"
-  music3El.style.display = "none"
-  music5El.style.display = "none"
+  music1El.style.display = "none";
+  music2El.style.display = "none";
+  music3El.style.display = "none";
+  music5El.style.display = "none";
 });
 list5El.addEventListener('mouseover', function(){
   music5El.style.display = "block";
-  music1El.style.display = "none"
-  music2El.style.display = "none"
-  music3El.style.display = "none"
-  music4El.style.display = "none"
+  music1El.style.display = "none";
+  music2El.style.display = "none";
+  music3El.style.display = "none";
+  music4El.style.display = "none";
 });
 
+// list1El.addEventListener('mouseover', function(){
+//   music1El.style.transition = ".5s";
+// });
+// list2El.addEventListener('mouseover', function(){
+//   music2El.style.transition = ".5s";
+// });
+// list3El.addEventListener('mouseover', function(){
+//   music3El.style.transition = ".5s";
+// });
+// list4El.addEventListener('mouseover', function(){
+//   music4El.style.transition = ".5s";
+// });
+// list5El.addEventListener('mouseover', function(){
+//   music5El.style.transition = ".5s";
+// });
 
+const listEl = document.querySelectorAll('.magazinelist');
+const contentEl = document.querySelectorAll('.content');
 
+listEl.addEventListener('mouseover', function(){
+  contentEl.style.transition = ".5s"
+});

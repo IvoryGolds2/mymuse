@@ -231,12 +231,14 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .magazine .inner {
   width: 1200px;
   height: 100%;
   /* background-color: pink; */
   position: relative;
+
 } 
 h3 {
   font-size: 30px;
@@ -250,12 +252,9 @@ h3 {
   line-height: 1.4;
   cursor: pointer;
 }
-.magazine .inner .menu li {
-  transition: .5s;
-}
 
 .magazine .inner .menu li:hover {
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 .content {
