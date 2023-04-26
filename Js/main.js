@@ -130,6 +130,20 @@ list5El.addEventListener('mouseover', function(){
   music4El.style.display = "none";
 });
 
+// START
+const listEls = document.querySelectorAll('.list');
+const musicEls = document.querySelectorAll('.music');
+listEls.forEach(function (listEl, index) {
+  listEl.addEventListener('mouseover', function () {
+    musicEls.forEach(function (musicEl) {
+      musicEl.style.display = 'none';
+    });
+
+    musicEls[index].style.display = "block";
+  });
+});
+// END
+
 // list1El.addEventListener('mouseover', function(){
 //   music1El.style.transition = ".5s";
 // });
