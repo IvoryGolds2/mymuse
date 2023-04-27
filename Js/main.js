@@ -161,3 +161,23 @@ listEls.forEach(function (listEl, index) {
 // });
 
 // 모달창 테스트
+const inst1El = document.querySelector('.inst1')
+const inst2El = document.querySelector('.inst2')
+const inst3El = document.querySelector('.inst3')
+const inst4El = document.querySelector('.inst4')
+const inst5El = document.querySelector('.inst5')
+const inst6El = document.querySelector('.inst6')
+const inst7El = document.querySelector('.inst7')
+const inst8El = document.querySelector('.inst8')
+const inst9El = document.querySelector('.inst9')
+const inst10El = document.querySelector('.inst10')
+const inst11El = document.querySelector('.inst11')
+const inst12El = document.querySelector('.inst12')
+const inst13El = document.querySelector('.inst13')
+const inst14El = document.querySelector('.inst14')
+const inst15El = document.querySelector('.inst15')
+
+inst4El.addEventListener('click', function(){
+  const audio = document.getElementById("drum");
+  audio.play();
+});
