@@ -160,9 +160,4 @@ listEls.forEach(function (listEl, index) {
 //   music5El.style.transition = ".5s";
 // });
 
-const listEl = document.querySelectorAll('.magazinelist');
-const contentEl = document.querySelectorAll('.content');
-
-listEl.addEventListener('mouseover', function(){
-  contentEl.style.transition = ".5s"
-});
+// 모달창 테스트
