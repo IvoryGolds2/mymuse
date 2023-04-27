@@ -44,6 +44,7 @@
   <!-- SWIPER -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="./JS/youtube.js"></script>
   <script defer src="./Js/main.js"></script>
 </head>
 <body>
@@ -157,10 +158,27 @@
   <section class="hotmuse">
     <div class="inner">
       <h2>Hot MUSE</h2>
-      <div class="artist"><a href="https://youtu.be/65KR3gSdY6I" target="_blank"><img src="./IMAGE/현욱.jpg" alt="">보컬리스트 김현욱</a></div>
-      <div class="artist"><a href="https://youtu.be/TuUlkhj3Bio" target="_blank"><img src="./IMAGE/상아.jpg" alt="">첼리스트 상아</a></div>
-      <div class="artist"><a href="https://youtu.be/fXxykz59cN4" target="_blank"><img src="./IMAGE/이고도.jpg" alt="">싱어송라이터 이고도</a></div>
-      <div class="artist"><a href="https://youtu.be/PmNyNJFCugo" target="_blank"><img src="./IMAGE/강현지.jpg" alt="">베이시스트 로컬</a>
+      
+      <div class="artist">
+        <img src="./IMAGE/현욱.jpg" alt="">
+       
+        <div class="obutton">
+          <button type="button" onclick="showModal()">보컬리스트 김현욱
+          </button>
+        </div>
+        
+      </div>
+
+      <div class="artist">
+        <img src="./IMAGE/상아.jpg" alt="">
+      </div>
+
+      <div class="artist">
+        <img src="./IMAGE/이고도.jpg" alt="">
+      </div>
+
+      <div class="artist">
+        <img src="./IMAGE/예이디.jpg" alt="">
       </div>
     </div>  
   </section>
@@ -237,7 +255,6 @@
     <div class="instrument inst13"><img src="./IMAGE/일렉기타-removebg-preview.png" alt=""></div>
     <div class="instrument inst14"><img src="./IMAGE/베이스기타-removebg-preview.png" alt=""></div>
     <div class="instrument inst15"><img src="./IMAGE/건반-removebg-preview (2).png" alt=""></div>
-
   </section>
   <!-- 푸터영역 -->
   <footer>
@@ -255,5 +272,16 @@
       <img src="./IMAGE/pngwing.com.png" alt="">
     </div>
   </footer>
+
+  <!-- 모달 -->
+  <div id="modal" class="modal">
+    <div class="cbutton">
+      <button type="button" onclick="hideModal()">x
+      </button>
+    </div>
+    <div class="youtube">
+        <div id="player" class="player"></div>
+    </div>
+  </div>
 </body>
 </html>

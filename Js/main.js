@@ -181,3 +181,11 @@ inst4El.addEventListener('click', function(){
   const audio = document.getElementById("drum");
   audio.play();
 });
+
+function showModal() {
+  document.getElementById("modal").style.display = "flex";
+}
+function hideModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
