@@ -24,6 +24,21 @@ header .logo img {
   width: 300px;
   height: 120px;
 }
+.btn-hamburger{
+  margin-right: 10px;
+  display: none;
+}
+.btn-hamburger span {
+  font-size: 50px;
+}
+.btn-x{
+  margin-right: 10px;
+  display: none;
+}
+.btn-x span {
+  font-size: 50px;
+}
+
 header .navbar {
   display: flex;
   align-items: center;
@@ -107,7 +122,7 @@ header .button .btn:hover {
 
 .box {
   width: 100%;
-  height: 600px;
+  /* height: 600px; */
   /* background-color: moccasin; */
   position: relative;
   display: flex;
@@ -168,9 +183,10 @@ text-align: center;
 }
 .major {
   width: 100%;
-  height: 300px;
+  /* height: 300px; */
   /* background-color: gray; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
@@ -188,11 +204,13 @@ text-align: center;
 /* HOT MUSE */
 .hotmuse {
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   /* background-color: pink; */
   display: flex;
   justify-content: center;
   position: relative;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 .hotmuse .inner {
   width: 1200px;
@@ -227,13 +245,13 @@ text-align: center;
 .modal {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, .7);
   position: fixed;
   top: 0;
   left: 0;
   overflow: hidden;
   z-index: 99;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -293,7 +311,7 @@ h3 {
   font-size: 30px;
 }
 .magazine .inner .menu {
-  width: 600px;
+  width: 227px;
   position: absolute;
   right: 644px;
   text-align: end;
@@ -522,3 +540,119 @@ footer .logo img {
   height: 118px;
 }
 
+@media screen and (max-width:1023px) {
+  header img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 2px;
+
+  }
+  header {
+    display: flex;
+  }
+  header .navbar .main-menu {
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    left: 648px;
+    top: 130px;
+    background-color: white;
+    width: 100%;
+    height: 380px;
+    display: none;
+    transition: .5s;
+  }
+  header .button {
+    position: absolute;
+    left: 687px;
+    top: 440px;
+    z-index: 3;
+    display: none;
+  }
+.sub-menu {
+  position: absolute;
+  right: 30px;
+  top: 200px;
+}
+.btn-hamburger {
+  display: block;
+}
+.box .inner ul {
+  margin: 5px;
+}
+.hotmuse .inner .artist {
+margin: 10px;
+}
+.magazine .inner .menu {
+position: absolute;
+right: 529px;
+}
+.content {
+position: absolute;
+left: 520px;
+}
+.instruments {
+  display: none;
+}
+.slides {
+  display: none;
+}
+}
+@media screen and (max-width:767px) {
+  header img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 2px;
+
+  }
+  header {
+    display: flex;
+  }
+  header .navbar .main-menu {
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    left: 470px;
+    top: 130px;
+    background-color: white;
+    width: 100%;
+    height: 380px;
+    display: none;
+    transition: .5s;
+  }
+  header .button {
+    position: absolute;
+    left: 505px;
+    top: 440px;
+    z-index: 3;
+    display: none;
+  }
+.sub-menu {
+  position: absolute;
+  right: 30px;
+  top: 200px;
+}
+.box .inner {
+width: 100%;
+}
+.box .inner ul {
+  margin: 10px;
+}
+.major .inner{
+  width: 100%;
+}
+.hotmuse .inner {
+  width: 700px;
+}
+.magazine .inner .menu {
+  position: absolute;
+  right: 400px;
+  }
+  .content {
+  position: absolute;
+  left: 395px;
+  }
+}
+  

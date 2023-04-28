@@ -182,10 +182,35 @@ inst4El.addEventListener('click', function(){
   audio.play();
 });
 
-function showModal() {
+function showModal(videoId) {
   document.getElementById("modal").style.display = "flex";
+  player.loadVideoById(videoId);
 }
 function hideModal() {
   document.getElementById("modal").style.display = "none";
 }
 
+const mainMenu = document.querySelector('.main-menu');
+const btnHam = document.querySelector('.btn-hamburger');
+const btnx = document.querySelector('.btn-x')
+const btnEl = document.querySelector('.button')
+
+
+btnHam.addEventListener('click', function(){
+  mainMenu.style.display = 'block'
+})
+btnHam.addEventListener('click', function(){
+  btnEl.style.display = 'block'
+})
+btnHam.addEventListener('click', function(){
+  btnHam.style.display = 'none'
+  btnx.style.display = 'block'
+})
+btnx.addEventListener('click',function(){
+  mainMenu.style.display = 'none'
+})
+btnx.addEventListener('click',function(){
+  btnEl.style.display = 'none'
+  btnx.style.display = 'none'
+  btnHam.style.display = ' block'
+})
