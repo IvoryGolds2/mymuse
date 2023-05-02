@@ -177,66 +177,76 @@ const inst13El = document.querySelector('.inst13')
 const inst14El = document.querySelector('.inst14')
 const inst15El = document.querySelector('.inst15')
 
+
+const audio = document.getElementById("myaudio")
+
+function myFunction() { 
+  isSupp = audio.canPlayType("mp3");
+  if (isSupp == "") {
+    audio.src = "audio.mp3";
+  } else {
+    audio.src = "audio.mp3";
+  }
+  audio.load();
+} 
+
+
 inst1El.addEventListener('click', function(){
-  const audio = document.getElementById("gt");
-  audio.play();
+  audio.src="./sound/gt.mp3";
 });
 inst2El.addEventListener('click', function(){
-  const audio = document.getElementById("pf");
-  audio.play();
+  audio.src="./sound/pf.mp3"
 });
 inst3El.addEventListener('click', function(){
-  const audio = document.getElementById("vn");
-  audio.play();
+  audio.src="./sound/vn.mp3"
 });
 inst4El.addEventListener('click', function(){
-  const audio = document.getElementById("drum");
-  audio.play();
+  audio.src="./sound/drum.mp3"
 });
 inst5El.addEventListener('click', function(){
-  const audio = document.getElementById("tp");
-  audio.play();
+  audio.src="./sound/tp.mp3"
+
 });
 inst6El.addEventListener('click', function(){
-  const audio = document.getElementById("gaya");
-  audio.play();
+  audio.src="./sound/가야금.mp3"
 });
 inst7El.addEventListener('click', function(){
-  const audio = document.getElementById("ob");
-  audio.play();
+  audio.src="./sound/ob.mp3"
+
 });
 inst8El.addEventListener('click', function(){
-  const audio = document.getElementById("vc");
-  audio.play();
+  audio.src="./sound/vc.mp3"
+
 });
 inst9El.addEventListener('click', function(){
-  const audio = document.getElementById("tae");
-  audio.play();
+  audio.src="./sound/태평소.mp3"
+
 });
 inst10El.addEventListener('click', function(){
-  const audio = document.getElementById("fl");
-  audio.play();
+  audio.src="./sound/fl.mp3"
+
 });
 inst11El.addEventListener('click', function(){
-  const audio = document.getElementById("hn");
-  audio.play();
+  audio.src="./sound/hn.mp3"
+
 });
 inst12El.addEventListener('click', function(){
-  const audio = document.getElementById("sax");
-  audio.play();
+  audio.src="./sound/sp.mp3"
+
 });
 inst13El.addEventListener('click', function(){
-  const audio = document.getElementById("eg");
-  audio.play();
+  audio.src="./sound/eg.mp3"
+
 });
 inst14El.addEventListener('click', function(){
-  const audio = document.getElementById("bass");
-  audio.play();
+  audio.src="./sound/eb.mp3"
+
 });
 inst15El.addEventListener('click', function(){
-  const audio = document.getElementById("ep");
-  audio.play();
+  audio.src="./sound/ep.mp3"
+
 });
+
 
 function showModal(videoId) {
   document.getElementById("modal").style.display = "flex";
@@ -270,3 +280,4 @@ btnx.addEventListener('click',function(){
   btnx.style.display = 'none'
   btnHam.style.display = ' block'
 })
+
