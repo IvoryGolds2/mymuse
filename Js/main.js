@@ -177,8 +177,64 @@ const inst13El = document.querySelector('.inst13')
 const inst14El = document.querySelector('.inst14')
 const inst15El = document.querySelector('.inst15')
 
+inst1El.addEventListener('click', function(){
+  const audio = document.getElementById("gt");
+  audio.play();
+});
+inst2El.addEventListener('click', function(){
+  const audio = document.getElementById("pf");
+  audio.play();
+});
+inst3El.addEventListener('click', function(){
+  const audio = document.getElementById("vn");
+  audio.play();
+});
 inst4El.addEventListener('click', function(){
   const audio = document.getElementById("drum");
+  audio.play();
+});
+inst5El.addEventListener('click', function(){
+  const audio = document.getElementById("tp");
+  audio.play();
+});
+inst6El.addEventListener('click', function(){
+  const audio = document.getElementById("gaya");
+  audio.play();
+});
+inst7El.addEventListener('click', function(){
+  const audio = document.getElementById("ob");
+  audio.play();
+});
+inst8El.addEventListener('click', function(){
+  const audio = document.getElementById("vc");
+  audio.play();
+});
+inst9El.addEventListener('click', function(){
+  const audio = document.getElementById("tae");
+  audio.play();
+});
+inst10El.addEventListener('click', function(){
+  const audio = document.getElementById("fl");
+  audio.play();
+});
+inst11El.addEventListener('click', function(){
+  const audio = document.getElementById("hn");
+  audio.play();
+});
+inst12El.addEventListener('click', function(){
+  const audio = document.getElementById("sax");
+  audio.play();
+});
+inst13El.addEventListener('click', function(){
+  const audio = document.getElementById("eg");
+  audio.play();
+});
+inst14El.addEventListener('click', function(){
+  const audio = document.getElementById("bass");
+  audio.play();
+});
+inst15El.addEventListener('click', function(){
+  const audio = document.getElementById("ep");
   audio.play();
 });
 
