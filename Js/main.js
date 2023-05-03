@@ -254,7 +254,7 @@ function showModal(videoId) {
 }
 function hideModal() {
   document.getElementById("modal").style.display = "none";
-  player.stopVideo(videoId);
+  player.pauseVideo(videoId);
 }
 
 const mainMenu = document.querySelector('.main-menu');
