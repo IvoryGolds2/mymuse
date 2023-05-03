@@ -263,21 +263,21 @@ const btnEl = document.querySelector('.button')
 
 
 btnHam.addEventListener('click', function(){
-  mainMenu.style.display = 'block'
+  mainMenu.style.visibility = 'visible';
+  btnEl.style.visibility = 'visible';
+  btnHam.style.visibility = 'hidden';
+  btnx.style.visibility = 'visible';
 })
 btnHam.addEventListener('click', function(){
-  btnEl.style.display = 'block'
 })
 btnHam.addEventListener('click', function(){
-  btnHam.style.display = 'none'
-  btnx.style.display = 'block'
 })
 btnx.addEventListener('click',function(){
-  mainMenu.style.display = 'none'
+  mainMenu.style.visibility = 'hidden'
 })
 btnx.addEventListener('click',function(){
-  btnEl.style.display = 'none'
-  btnx.style.display = 'none'
-  btnHam.style.display = ' block'
+  btnEl.style.visibility = 'hidden'
+  btnx.style.visibility = 'hidden'
+  btnHam.style.visibility = 'visible'
 })
 
